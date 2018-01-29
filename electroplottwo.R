@@ -13,5 +13,3 @@ electdata$datetime <- dmy(electdata$Date) + hms(electdata$Time)
 png(filename = "Plot2.png", width = 480, height = 480, units = "px")
 plot(electdata$datetime, electdata$Global_active_power, type = "l", lty = 1, xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.off()
-
-
